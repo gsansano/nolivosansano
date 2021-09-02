@@ -1,0 +1,14 @@
+{
+  "name": "ver2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-sass": "nodemon -e scss -x \"npm run build-sass\"",
+    "build-sass": "node-sass --include-path scss scss/styles.scss css/global.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

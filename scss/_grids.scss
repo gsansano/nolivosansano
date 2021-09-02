@@ -1,0 +1,28 @@
+/*=======================
+      GRIDS
+=======================*/
+
+.grid1 {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 4.5rem 95vh 6fr 0.5fr;
+    grid-template-areas:
+    "n n n n n n n n n n n n"
+    "h h h h h h h h h h h h"
+    "c c c c i i i i i i i i"
+    "f f f f f f f f f f f f";
+}
+
+.grid2 {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 4.5rem 95vh 4fr 0.5fr;
+    grid-template-areas:
+    "n n n n n n"
+    "h h h h h h"
+    "c c c c c c"
+    "f f f f f f";
+}
+

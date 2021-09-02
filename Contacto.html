@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Nolivo Sansano & Asoc.</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href=img/favicon.ico type="image/x-icon">
+    <!-- link hoja de estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+   <!-- Se inserta el CDN de bootstrap -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="css/global.css">
+   <meta name="description" content="Formulario de contacto con el Estudio Jurídico Nolivo, Sansano & Asociados.">
+   <meta name="keywords"  content="ABOGADO, ABOGADA, CIVIL, COMERCIAL, DAÑOS, LABORAL, ADMINISTRATIVO, ACCIDENTES, DIVORCIOS, DEFENSOR, EMPRESAS, NEUQUÉN, RÍO NEGRO, ALTO VALLE, PATAGONIA">          
+</head>
+
+<body class="grid2">
+    <!-- Se define la grilla -->
+    <header class="navbar">
+        <a class="navbar__logo" href="Index.html"><img src="img/LogoMails.png"></a> <!-- Logo principal -->
+        <nav class="navbar">
+            <ul class="navbar__lista">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="Index.html">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="Nosotros.html">Nosotros</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="Servicios.html">Servicios</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="Clientes.html">Clientes</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="Contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero5">
+        <!-- Sección central -->
+        <h1 class="hero5__titulo">Contactános</h1>
+        <p class="hero5__subtitulo">Ponete en contacto con nuestro equipo, programá una videollamada o un turno presencial para
+            contarnos cómo
+            podemos asesorarte.</p>
+    </section>
+
+   <section class="contacto">
+        <div class="contacto__form">
+            <form action="Gracias.html" method="POST">
+                <div class="form-group">
+                <label for="username">Nombre y Apellido:</label>
+                <input class="form-control" type="text" name="username">
+                <label for="gender">Sexo:</label>
+                <select class="form-select" name="gender">
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                </select>
+                <label form="state">Estado civil:</label>
+                <input type="radio" class="form-check" name="state" value="Soltero">
+                <label for="radioOne">Soltero/a</label>
+                <input type="radio" class="form-check" name="state" value="Casado">
+                <label for="radioOne">Casado/a</label>
+                <label for="email">Dirección de Correo:</label>
+                <input type="email" class="form-control" name="email">
+                <label for="comment">Comentarios:</label>
+                <textarea name="comment" id="" cols="30" rows="10" placeholder="Envianos tus comentarios"
+                    maxlength="240"></textarea>
+                <input type="submit" class="btn btn-dark" value="Enviar comentarios">
+                <input type="reset" class="btn btn-warning" value="Limpiar">
+            </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <h3>
+            <em>ESTUDIO</em>
+            <em>Copyright Nolivo, Sansano & Asociados 2013-2021</em>
+            <p>© 2013— 2021</p>
+        </h3>
+    </footer>
+</body>
+
+</html>

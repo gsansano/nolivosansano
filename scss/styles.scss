@@ -1,0 +1,265 @@
+@import "navbar";
+@import "grids";
+@import "tipografias";
+
+/*=======================
+          GLOBAL
+  =======================*/
+
+  html {
+    height: 100%;
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+    }
+  }
+  
+/*=======================
+    SELECTORES
+=======================*/
+
+img {
+    display:flex;
+    width: 100%;
+}
+
+/* Se agrega un gradiente a la tabla de servicios*/
+table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 3%;
+    color: rgb(195, 216, 243);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(25,118,151,1) 71%, rgba(16,145,172,1) 100%);
+}
+
+footer {
+    grid-area: f;    
+    display: flex;
+    border: solid 3px black;
+    background-color: black;
+    color: white;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    padding-top: 1rem;
+    padding-left: 3rem;
+}
+
+
+/*=======================
+      CLASES
+=======================*/
+
+.error {
+    grid-area: h;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+
+    img {
+        width: 60%;
+    }
+
+    p {
+        display: flex;
+        justify-content: center;
+        width: 70%;
+    }
+}
+
+.articulo {
+    margin-left: 15%;
+    text-align: start;
+
+    &__titulo {
+        font-style: italic;
+    }
+
+    &__contenido {
+        font-size: 1.2em;
+    }
+    
+}
+
+/* SE CREA UN LOOP DE EACH PARA GENERAR LOS ESTILOS DE LAS SECCIONES "HERO" EN TODAS LAS PAGINAS.*/
+
+$heros: (hero1, hero2, hero3, hero4, hero5); /* Se define la lista de nombres*/
+
+@each $name in $heros { 
+
+    .#{$name} { /*Se asignan las propiedades css a reproducir para cada elemento en la lista*/
+    
+        grid-area: h;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+        color: #F3E8EE;
+        background-size: cover;
+        background-image: url('../img/#{$name}.jpg'); /*Se renombraron las imagenes para que pueda manipularlas con el nombre de la variable*/
+
+       &__titulo { /*Se aplica nesting y BEM para generar las subclases*/
+            letter-spacing: 2px;
+            text-align: center;
+            padding-bottom: .3rem;
+        }
+
+        &__subtitulo {
+            display: flex;
+            padding: 1rem 2rem;
+            justify-content: space-around;
+            font-size: 1.5rem;
+            font-style: italic;
+        }
+    }   
+}
+
+.content {
+    grid-area: c;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: #F3E8EE;
+    background-color: #103b4b;
+    align-items: center;
+    justify-content: center;
+
+    &__clientes {
+        height: 25em;
+        padding: 2.5rem 0 1.5rem 0;
+        justify-content: space-between;
+        
+        li a {
+            text-decoration: none;
+            color: #F3E8EE;
+        }
+    }
+}
+
+.contacto {
+    grid-area: c;
+    display: flex;
+    margin: 3rem auto;
+    width: 100%;
+    justify-content: center;
+
+    &__form {
+        display: flex;
+        max-width: 70%;
+        ;
+    }
+}
+
+.columnas {
+    grid-area: c;
+    display: flex;
+    flex-direction: column;
+    }
+
+.col1 {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 2rem;
+    text-align: start;
+    color: #F3E8EE;
+    background-color: #103b4b;
+    }
+
+.col2 {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 2rem;
+    text-align: start;
+    color: #F3E8EE;
+    background-color: #22728f
+    }
+    
+.img {
+    grid-area: i;
+    width: auto;
+    display: flex;
+    padding: 10% 10% 10% 5%;
+    background-color: #103b4b;
+}
+
+
+
+/*=======================
+       IDs
+=======================*/
+
+#boton a {
+    display: flex;
+    font-size: 1rem;
+    justify-content: center; /*se define que justifique en el centro el contenido de la caja*/
+    align-items: center; /*se define la alineación del contenido al centro de la caja*/
+    height: 40px;
+    width: 200px;
+    margin: 15%;
+    color: #103b4b;
+    border-top: solid 5px;
+    border-right: solid 5px;
+    border-bottom: solid 5px;
+    border-left: solid 5px;
+    border-color: #103b4b;
+    background-color: #5BC0BE;
+}
+
+#tabla {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 100vw;
+    
+}
+
+/*=======================
+   MEDIA QUERIES
+=======================*/
+
+@media only screen and (max-width:960px)
+{
+    .grid1, .grid2 {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 0.3fr 100vh 3fr 3fr 0.5fr;
+        grid-template-areas:
+        "n n n n n n"
+        "h h h h h h"
+        "c c c c c c"
+        "i i i i i i"
+        "f f f f f f"; 
+    }
+
+@media only screen and (max-width:400px)
+{
+    .grid1, .grid2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax (400px,1fr));
+        grid-template-rows: repeat(auto-fit, minmax (400px,1fr));
+        }
+    
+    nav ul {
+        align-items: center;
+        justify-items: center;
+    }
+
+    body {
+        font-size: 10px;
+    }
+}
+
+
+}
+

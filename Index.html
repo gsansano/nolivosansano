@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nolivo Sansano & Asoc.</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href=img/favicon.ico type="image/x-icon">
+    <!-- tipografía de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Se inserta el CDN de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/global.css">
+    <meta name="description" content="Estudio jurídico integral del Alto Valle de Río Negro y Neuquén. Abogados de derecho laboral, civil, familia y administrativo.">
+    <meta name="keywords"  content="ABOGADO, ABOGADA, CIVIL, COMERCIAL, DAÑOS, LABORAL, ADMINISTRATIVO, ACCIDENTES, DIVORCIOS, DEFENSOR, EMPRESAS, NEUQUÉN, RÍO NEGRO, ALTO VALLE, PATAGONIA">     
+</head>
+
+<body class="grid1"> <!-- Se define la grilla -->
+    <header class="navbar">
+        <a class="navbar__logo" href="Index.html"><img src="img/LogoMails.png"></a> <!-- Logo principal -->
+        <nav class="navbar">
+            <ul class="navbar__lista">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="Index.html">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="Nosotros.html">Nosotros</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="Servicios.html">Servicios</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="Clientes.html">Clientes</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="Contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero1"> <!-- Sección central -->
+        <div class="hero1__titulo">
+            <h1 class="hero1__titulo--principal">Nolivo, Sansano & Asociados</h1>
+        </div>
+        <div style="max-width: 50%; min-width: 2rem; padding: 5% auto 5% auto; font-size: 1.3em;">
+            <h3>Somos un estudio jurídico integral, orientado hacia las áreas de Derecho Civil,
+                Comercial y Laboral con sede en el Alto Valle de Rio Negro.</h3>
+        </div>
+    </section>
+
+    <section class="content"> <!-- Sección secundaria -->
+        <article class="articulo">
+            <h2 class="articulo__titulo">Estamos atendiendo.</h2>
+            <p class="articulo__contenido">Los tiempos cambiaron. Nosotros también. <!-- Se inserta el badge "Nuevo!" de Bootsrap -->
+                Ya no tenés que sacar un turno presencial para hablar con tu abogado. Conocé nuestro sistema de
+                consultas web, o programá una videollamada. <span class="badge bg-secondary">Nuevo!</span></p>
+        </article>
+    
+        <div class="dropdown"> <!-- Se inserta un dropdown button de Bootstrap con JS -->
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Hacenos tu consulta
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="https://consultas.nolivosansano.com">Ingresar al sistema</a>
+            </ul>
+          </div>
+    </section>
+
+    <div class="img"><img src="img/Tech2.jpg" alt="imagen"></div> <!-- imagen independiente posicionada con grid -->
+
+    <footer>
+        <!-- Se aplica clase lead de bootstrap -->
+        <h3  class="lead">
+            <em>ESTUDIO</em>
+            <em>Copyright Nolivo, Sansano & Asociados 2013-2021</em>
+            <p>© 2013— 2021</p>
+        </h3>
+    </footer>
+
+</body>
+
+</html>

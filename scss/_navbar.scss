@@ -1,0 +1,37 @@
+/*=======================
+      NAVBAR
+=======================*/
+.navbar {
+    grid-area: n;
+    background-color: #301A4B;
+
+    &__logo {
+        max-width: 10%;
+        min-width: 8rem;
+        padding: 0 .8rem;
+    }
+
+    &__lista {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        justify-content: flex-end;
+    }
+
+    &__link {
+        display: flex;
+        text-decoration: none;
+        color: #F3E8EE;
+        font-size: 1rem;
+        margin-right: 3rem;
+        margin-top: .3rem;
+
+        &:hover {
+            transition: ease-in-out 200ms;
+            border-bottom: solid rgb(71, 202, 202);
+            color:sandybrown;
+            transform: scale(1.2);
+            }
+    }
+
+}
