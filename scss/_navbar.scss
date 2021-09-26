@@ -3,7 +3,10 @@
 =======================*/
 .navbar {
     grid-area: n;
+    display: flex;
     background-color: #301A4B;
+    padding-right: 1rem;
+    align-items: center;
 
     &__logo {
         max-width: 10%;
@@ -13,6 +16,7 @@
 
     &__lista {
         display: flex;
+        margin: 0 auto;
         flex-wrap: wrap;
         list-style: none;
         justify-content: flex-end;
@@ -33,5 +37,4 @@
             transform: scale(1.2);
             }
     }
-
 }

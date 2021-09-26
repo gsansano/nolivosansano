@@ -4,13 +4,17 @@
 =======================*/
 .navbar {
   grid-area: n;
-  background-color: #301A4B; }
+  display: flex;
+  background-color: #301A4B;
+  padding-right: 1rem;
+  align-items: center; }
   .navbar__logo {
     max-width: 10%;
     min-width: 8rem;
     padding: 0 .8rem; }
   .navbar__lista {
     display: flex;
+    margin: 0 auto;
     flex-wrap: wrap;
     list-style: none;
     justify-content: flex-end; }
